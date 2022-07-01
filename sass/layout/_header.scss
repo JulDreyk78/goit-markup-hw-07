@@ -1,0 +1,140 @@
+.header-line {
+  border-bottom: 1px solid #ececec;
+  left: 0px;
+  top: 0px;
+}
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+  left: 0px;
+  top: 0px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-logo-nav {
+  text-decoration: none;
+  color: var(--brand-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+.header-logo-web {
+  color: #2196f3;
+}
+.header-logo-studio {
+  color: var(--brand-color);
+}
+.header-title {
+  display: flex;
+}
+.header-list {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.header-item {
+  margin-left: 50px;
+}
+
+.header-link-cnct {
+  margin-left: auto;
+}
+.header-list-connect {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header-link {
+  font-weight: 500;
+  color: var(--brand-color);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 32px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover,
+.header-link:focus {
+  color: #2196f3;
+}
+.header-list .header-link.current {
+  color: #2196f3;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.header-item-connection:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link-mail {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link-mail:hover,
+.header-link-mail:focus {
+  color: #2196f3;
+}
+
+.header-link-mail:hover .header-icon,
+.header-link-mail:focus .header-icon {
+  fill: #2196f3;
+}
+
+.header-link-tel {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link-tel:hover,
+.header-link-tel:focus {
+  color: #2196f3;
+}
+
+.header-link-tel:hover .header-icon,
+.header-link-tel:focus .header-icon {
+  fill: #2196f3;
+}
+
+.header-icon {
+  fill: #757575;
+  margin-right: 10px;
+}
