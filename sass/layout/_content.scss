@@ -3,37 +3,29 @@
   padding-bottom: 94px;
 }
 
-.content-item:not(:last-child) {
+.menu-cntnt__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.box-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu-cntnt__box-icon {
+  @extend %align-list;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
   height: 120px;
 }
 
-.content-list {
+.menu-cntnt-list {
   display: flex;
   justify-content: space-between;
 }
-.content-caption {
+.menu-cntnt__caption {
   color: var(--brand-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.content-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.menu-cntnt__text {
+  @include font(400, 14px, 1.7, 0.03em);
   max-width: 270px;
 }

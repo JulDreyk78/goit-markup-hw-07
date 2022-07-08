@@ -1,3 +1,16 @@
 :root {
   --brand-color: #212121;
 }
+
+%align-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

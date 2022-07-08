@@ -2,29 +2,22 @@
   color: #ffffff;
   background-color: #2196f3;
   min-width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
+  @include font(700, 16px, 1.8, 0.06em);
   cursor: pointer;
-  letter-spacing: 0.06em;
   display: flex;
   font-family: inherit;
   padding: 10px 32px;
   border: 1px transparent;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-list;
   flex-direction: column;
 }
 
@@ -44,10 +37,7 @@
 
 .hero-caption {
   color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.4, 0.06em);
   text-align: center;
   text-transform: uppercase;
   max-width: 695px;
