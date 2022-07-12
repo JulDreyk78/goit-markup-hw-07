@@ -1,9 +1,11 @@
 .footers {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // align-items: baseline;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
+// align-items: baseline;
 
 .address__logo-nav {
   text-decoration: none;
@@ -119,18 +121,12 @@
 }
 
 /* ------Футер подписка на рассылку--------- */
-.address__subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.address__sub {
-  margin-left: auto;
-}
 
 .address__span {
   // @extend %align-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -147,7 +143,10 @@
 
 .address__input {
   @media screen and (min-width: 480px) {
-    width: 100%;
+    width: 450px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 358px;
   }
   width: 100%;
   height: 50px;
@@ -167,14 +166,13 @@
 }
 
 .address__input::placeholder {
-  // @extend %align-list;
+  @extend %align-list;
   @include font(400, 16px, 1.2, 0.03em);
   color: rgba(255, 255, 255, 0.6);
 }
 
 .address__btn {
-  // @extend %align-list;
-
+  @extend %align-list;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -184,7 +182,6 @@
   @include font(700, 16px, 1.8, 0.06em);
   color: #ffffff;
   // margin-left: 12px;
-  padding: 0;
   cursor: pointer;
 }
 
