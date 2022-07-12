@@ -1,16 +1,22 @@
+.emplom-hidden {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .employment {
   padding-bottom: 94px;
 }
+
 .menu-metier {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .menu-metier__item {
   position: relative;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  width: calc((100% - 2 * 30px) / 3);
 }
 
 .employment-caption {

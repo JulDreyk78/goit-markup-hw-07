@@ -1,25 +1,36 @@
-.container.team {
+.container {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-caption {
   color: var(--brand-color);
   @include font(700, 36px, 1.1, 0.03em);
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 0;
+  margin-bottom: 30px;
+  // margin-top: 0;
 }
 
 .command-list {
+  // padding-bottom: 60px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .command-list__item {
@@ -28,15 +39,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  &:not(:last-child) {
-    margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 2);
   }
 }
 
 .command-list__name {
   color: var(--brand-color);
   @include font(500, 16px, 1.1, 0.03em);
-  padding-top: 30px;
+  margin-top: 30px;
   margin-bottom: 11px;
 }
 
