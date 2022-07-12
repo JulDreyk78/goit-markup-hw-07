@@ -559,6 +559,14 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .new-class {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 .address__logo-nav {
   text-decoration: none;
   color: var(--brand-color);
@@ -585,6 +593,11 @@ a {
   width: 100%;
   justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .address__address {
+    margin-bottom: 60px;
+  }
 }
 
 .footer {
@@ -646,12 +659,17 @@ a {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .address__soc-content {
+    margin-bottom: 60px;
+  }
+}
+
 .address__soc-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .address__text {
@@ -661,7 +679,6 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-align: center;
 }
