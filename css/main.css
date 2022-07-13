@@ -100,8 +100,18 @@ a {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 16px;
-  padding-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .title__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .title__logo {
@@ -150,7 +160,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .header .container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -197,12 +209,22 @@ a {
 
 .connect {
   display: none;
-  align-items: center;
-  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .connect {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .connect {
-    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -222,7 +244,13 @@ a {
 }
 @media screen and (min-width: 768px) {
   .connect__link-mail {
-    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__link-mail {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -248,12 +276,6 @@ a {
 .connect__link-tel:hover, .connect__link-tel:focus {
   color: #2196f3;
 }
-@media screen and (min-width: 768px) {
-  .connect__link-tel {
-    margin-right: 30px;
-  }
-}
-
 .connect__icon {
   fill: #757575;
   margin-right: 10px;
