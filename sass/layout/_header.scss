@@ -207,16 +207,29 @@
   }
 }
 
+.mobile-icon:hover,
+.mobile-icon:focus {
+  fill: #2196f3;
+}
+
 .menu-open-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: transparent;
   border: none;
-  display: inline-flex;
+  // display: inline-flex;
   margin-left: auto;
-  padding: 0;
+  padding-top: 10px;
+  padding-right: 15px;
   cursor: pointer;
+
   &:hover,
   &:focus {
     fill: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 

@@ -284,16 +284,29 @@ a {
   fill: #2196f3;
 }
 
+.mobile-icon:hover,
+.mobile-icon:focus {
+  fill: #2196f3;
+}
+
 .menu-open-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: transparent;
   border: none;
-  display: inline-flex;
   margin-left: auto;
-  padding: 0;
+  padding-top: 10px;
+  padding-right: 15px;
   cursor: pointer;
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .mobile-menu {
@@ -1162,8 +1175,6 @@ a {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -1173,25 +1184,38 @@ a {
   transition: transform 250ms linear;
   padding: 40px;
 }
-
-.close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 6px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #ffffff;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
-.close:hover, .close:focus {
-  fill: #2196f3;
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
+@media screen and (min-width: 480px) {
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close:hover, .close:focus {
+    fill: #2196f3;
+  }
+}
 .modal-title {
   font-size: 20px;
   line-height: 1.15;
@@ -1299,7 +1323,6 @@ a {
 .check-text {
   display: block;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1320,6 +1343,16 @@ a {
   border: 1px solid #212121;
   margin-right: 7px;
   border-radius: 2px;
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+  }
 }
 
 .icon-check {
