@@ -1072,7 +1072,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .scroll {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1088,6 +1088,11 @@ a {
 
 .scroll-item {
   border-bottom: #eee solid 1px;
+}
+@media screen and (max-width: 767px) {
+  .scroll-item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .scroll-item {
