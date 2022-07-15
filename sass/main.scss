@@ -5,16 +5,15 @@
 @import "./utils/mixin";
 
 @import "./components/container";
-@import "./layout/header";
+@import "./components/modal-menu-head";
 
+@import "./layout/header";
 @import "./layout/hero";
 @import "./layout/content";
 @import "./layout/employment";
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
-@import "./layout/modal-menu-head";
-
 @import "./layout/portfolio";
 
 @import "./components/backdrop";

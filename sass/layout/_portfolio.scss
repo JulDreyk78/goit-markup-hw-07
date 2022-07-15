@@ -1,10 +1,4 @@
-// .section-category {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-
 .categories {
-  //   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   @media screen and (max-width: 767px) {
@@ -15,7 +9,6 @@
     padding-top: 60px;
     padding-bottom: 30px;
   }
-
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -28,8 +21,6 @@
 .categories__item {
   margin-right: 8px;
   margin-bottom: 15px;
-
-  // max-width: calc((100% - 4 * 8px) / 5);
 }
 
 .categories__btn {

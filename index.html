@@ -58,7 +58,6 @@
           </li>
         </ul>
       </div>
-
       <button type="button" class="menu-open-btn" data-menu-open>
         <svg class="mobile-icon" width="40" height="40">
           <use href="./image/icons.svg#icon-menu"></use>
@@ -113,7 +112,6 @@
         </div>
       </div>
     </header>
-
     <main class="main">
       <!-- Герой -->
       <section class="hero">
@@ -185,40 +183,81 @@
           <h2 class="employment-caption">Чем мы занимаемся</h2>
           <ul class="menu-metier">
             <li class="menu-metier__item">
-              <img
-                src="./image/img.jpg"
-                alt="кодирование-на-планшете"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="./image/img.jpg 1x, ./image/img-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/img.jpg"
+                  alt="кодирование-на-планшете"
+                  class="image"
+                />
+              </picture>
               <p class="menu-metier__top-text">Десктопные приложения</p>
             </li>
             <li class="menu-metier__item">
-              <img
-                src="./image/tel-in-hand.jpg"
-                alt="телефон-в-руках"
-                class="image"
-              />
+              <picture
+                ><source
+                  srcset="./image/tel-in-hand.jpg 1x, ./image/img-tel-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./image/tel-in-hand.jpg"
+                  alt="телефон-в-руках"
+                  class="image"
+                />
+              </picture>
               <p class="menu-metier__top-text">Мобильные приложения</p>
             </li>
             <li class="menu-metier__item">
-              <img
-                src="./image/leptop.jpg"
-                alt="выбор-цвета-на-планшете"
-                class="image"
-              />
+              <picture
+                ><source
+                  srcset="./image/leptop.jpg 1x, ./image/img-leptop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./image/leptop.jpg"
+                  alt="выбор-цвета-на-планшете"
+                  class="image"
+                />
+              </picture>
               <p class="menu-metier__top-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
-
       <!-- Команда работников -->
       <section class="team">
         <div class="container">
           <h2 class="team-caption">Наша команда</h2>
           <ul class="command-list">
             <li class="command-list__item">
-              <img src="./image/igor-d.jpg" alt="" width="270" class="image" />
+              <picture
+                ><source
+                  srcset="
+                    ./image/igor-desktop.jpg    1x,
+                    ./image/igor-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./image/igor-tablet.jpg    1x,
+                    ./image/igor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./image/igor-mobile.jpg    1x,
+                    ./image/igor-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  src="./image/igor-desktop.jpg"
+                  alt=""
+                  width="450"
+                  class="image"
+              /></picture>
               <h3 class="command-list__name">Игорь Демьяненко</h3>
               <p class="command-list__text">Product Designer</p>
               <ul class="command-list__soc-list list">
@@ -250,7 +289,31 @@
               </ul>
             </li>
             <li class="command-list__item">
-              <img src="./image/olg-r.jpg " alt="" width="270" class="image" />
+              <picture
+                ><source
+                  srcset="
+                    ./image/olga-desktop.jpg    1x,
+                    ./image/olga-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./image/olga-tablet.jpg    1x,
+                    ./image/olga-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./image/olga-mobile.jpg    1x,
+                    ./image/olga-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  src="./image/olga-desktop.jpg"
+                  alt=""
+                  width="450"
+                  class="image"
+              /></picture>
               <h3 class="command-list__name">Ольга Репина</h3>
               <p class="command-list__text">Frontend Developer</p>
               <ul class="command-list__soc-list list">
@@ -282,7 +345,31 @@
               </ul>
             </li>
             <li class="command-list__item">
-              <img src="./image/nicolay.jpg" alt="" width="270" class="image" />
+              <picture
+                ><source
+                  srcset="
+                    ./image/nikolay-desktop.jpg    1x,
+                    ./image/nikolay-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./image/nikolay-tablet.jpg    1x,
+                    ./image/nikolay-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./image/nikolay-mobile.jpg    1x,
+                    ./image/nikolay-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  src="./image/nikolay-desktop.jpg"
+                  alt=""
+                  width="450"
+                  class="image"
+              /></picture>
               <h3 class="command-list__name">Николай Тарасов</h3>
               <p class="command-list__text">Marketing</p>
               <ul class="command-list__soc-list list">
@@ -314,12 +401,31 @@
               </ul>
             </li>
             <li class="command-list__item">
-              <img
-                src="./image/myhail-e.jpg"
-                alt=""
-                width="270"
-                class="image"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./image/mihail-desktop.jpg    1x,
+                    ./image/mihail-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./image/mihail-tablet.jpg    1x,
+                    ./image/mihail-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./image/mihail-mobile.jpg    1x,
+                    ./image/mihail-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  src="./image/mihail-desktop.jpg"
+                  alt=""
+                  width="450"
+                  class="image"
+              /></picture>
               <h3 class="command-list__name">Михаил Ермаков</h3>
               <p class="command-list__text">UI Designer</p>
               <ul class="command-list__soc-list list">
@@ -353,7 +459,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Постоянные клиенты -->
       <section class="clients">
         <div class="container clients-cont">
@@ -485,7 +590,6 @@
         </div>
       </div>
     </footer>
-
     <!------ Модалка ------>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -557,7 +661,6 @@
               id="privacy"
               class="input-check visually-hidden"
             />
-
             <label for="privacy" class="check-text"
               ><span
                 ><svg class="icon-check" width="11" height="8">

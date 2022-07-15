@@ -28,8 +28,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  position: fixed;
-  z-index: 2;
   background: #fff;
   top: 0;
   left: 0;
@@ -59,10 +57,6 @@
   cursor: pointer;
 }
 
-// .mob-menu {
-//   margin-bottom: 75px;
-// }
-
 .mob-menu__link {
   @include font(500, 40px, 1.2, 0.02em);
   color: var(--brand-color);
@@ -72,16 +66,13 @@
   color: #2196f3;
 }
 
-// .mob-menu__connect {
-//   margin-bottom: 64px;
-// }
-
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .mob-menu-social__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__link {
